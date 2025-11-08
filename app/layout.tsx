@@ -9,7 +9,10 @@
 
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
+import { ibmPlexMono, orbitron } from './fonts';
 import './styles/globals.css';
+import './styles/tokens.css';
+import './styles/theme-roland.css';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -22,7 +25,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Nate's prototypes",
+  title: 'Prototype Composer',
   description: 'The home for all my prototypes',
   icons: {
     icon: [
@@ -41,7 +44,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>{children}</body>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} ${ibmPlexMono.variable} ${orbitron.variable}`}
+      >
+        {children}
+      </body>
     </html>
   );
 }

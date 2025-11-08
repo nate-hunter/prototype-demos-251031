@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import styles from './styles/home.module.css';
 import { ibmPlexMono, orbitron } from './fonts';
+import ThemeToggle from './components/ThemeToggle';
 
 export default function Home() {
   // Add your prototypes to this array
@@ -25,6 +26,7 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
+      <ThemeToggle />
       <header className={styles.header}>
         <h1>Prototype Composer</h1>
       </header>

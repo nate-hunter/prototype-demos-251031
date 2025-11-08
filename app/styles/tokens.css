@@ -1,0 +1,59 @@
+/* ========================================
+   DESIGN SYSTEM PRIMITIVES
+   Theme-agnostic design tokens
+   ======================================== */
+
+:root {
+  /* ========================================
+     SPACING SYSTEM (8px base grid)
+     ======================================== */
+  --space-1: 0.25rem; /* 4px */
+  --space-2: 0.5rem; /* 8px */
+  --space-3: 0.75rem; /* 12px */
+  --space-4: 1rem; /* 16px */
+  --space-5: 1.5rem; /* 24px */
+  --space-6: 2rem; /* 32px */
+  --space-8: 3rem; /* 48px */
+  --space-10: 4rem; /* 64px */
+
+  /* ========================================
+     TYPOGRAPHY SCALE
+     ======================================== */
+  --font-size-xs: 0.75rem; /* 12px - Small labels */
+  --font-size-sm: 0.875rem; /* 14px - Body text */
+  --font-size-base: 1rem; /* 16px - Default */
+  --font-size-lg: 1.125rem; /* 18px - Subheadings */
+  --font-size-xl: 1.5rem; /* 24px - H3 */
+  --font-size-2xl: 2rem; /* 32px - H2 */
+  --font-size-3xl: 3rem; /* 48px - H1 */
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+
+  --letter-spacing-tight: -0.02em;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 0.05em;
+  --letter-spacing-wider: 0.1em;
+
+  /* ========================================
+     BORDER RADIUS (Mostly sharp edges)
+     ======================================== */
+  --radius-none: 0;
+  --radius-sm: 2px; /* Subtle softening */
+  --radius-md: 4px; /* Buttons */
+  --radius-lg: 8px; /* Cards */
+  --radius-full: 9999px; /* Circular */
+
+  /* ========================================
+     TRANSITIONS
+     ======================================== */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 350ms ease;
+}

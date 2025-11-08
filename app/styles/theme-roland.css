@@ -1,0 +1,133 @@
+/* ========================================
+   TR-808/909 THEME SYSTEM
+   Theme-specific colors and shadows
+   ======================================== */
+
+:root {
+  /* ========================================
+     SHADOWS (Theme-specific variants)
+     ======================================== */
+  /* Dark mode shadows (default) */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 2px 4px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 4px 8px rgba(0, 0, 0, 0.5);
+  --shadow-inset: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+  --shadow-raised: 0 -2px 4px rgba(255, 255, 255, 0.1);
+
+  /* Light mode shadow variants (lighter, more subtle) */
+  --shadow-light-sm: 0 1px 2px rgba(0, 0, 0, 0.08);
+  --shadow-light-md: 0 2px 4px rgba(0, 0, 0, 0.12);
+  --shadow-light-lg: 0 4px 8px rgba(0, 0, 0, 0.16);
+  --shadow-light-inset: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+
+  /* ========================================
+     DARK MODE (TR-808) - DEFAULT
+     ======================================== */
+  --color-bg-primary: #1a1d24;
+  --color-bg-secondary: #2d3139;
+  --color-bg-tertiary: #3a3f4a;
+  --color-bg-panel: #323640; /* TR-808 bottom section gray (around START STOP/TAP buttons) */
+
+  --color-accent-red-1: #ff3333;
+  --color-accent-red-2: #ff4444;
+  --color-accent-orange-1: #ff6633;
+  --color-accent-orange-2: #ff8844;
+  --color-accent-yellow-1: #ffcc33;
+  --color-accent-yellow-2: #ffdd44;
+  --color-accent-cream: #fff5e6;
+
+  --color-brand: #ff6633;
+
+  --color-text-primary: #e8e6e3;
+  --color-text-secondary: #a8a6a3;
+  --color-text-accent: #ff6633;
+
+  --color-control-knob: #4a4548;
+  --color-control-indicator: #ff6633;
+  --color-button-off: #2d3139;
+  --color-button-on: #ff3333;
+}
+
+/* ========================================
+   LIGHT MODE (TR-909 INSPIRED)
+   ======================================== */
+[data-theme='light'] {
+  /* Primary Surface Colors - Warm cream chassis */
+  --color-bg-primary: #ece7d4; /* Warm cream base */
+  --color-bg-secondary: #e8e6e1; /* Slightly lighter cream */
+  --color-bg-tertiary: #d4d2cd; /* Mid-tone panel */
+  --color-bg-elevated: #f5f3ed; /* Raised elements */
+
+  /* Accent Colors - TR-909 palette */
+  --color-accent-orange: #e17639; /* Roland orange for branding */
+  --color-accent-orange-light: #e9b049; /* Lighter orange accent */
+  --color-accent-red: #dd3322; /* Red LED indicators */
+  --color-accent-blue: #4a5566; /* Secondary controls */
+
+  /* Step Sequencer Two-Tone Colors */
+  --color-button-cream: #ece7d4; /* First 8 buttons (1-8) */
+  --color-cream: #ece7d4; /* First 8 buttons (1-8) */
+  --color-button-dark: #2d2f35; /* Next 8 buttons (9-16) */
+  --color-button-cream-hover: #f5f3ed;
+  --color-cream-hover: #f5f3ed;
+  --color-button-dark-hover: #3a3c42;
+
+  /* Brand Color */
+  --color-brand: #e17639; /* Roland signature orange */
+  --color-roland: #e17639; /* Roland signature orange */
+
+  /* Text Colors */
+  --color-text-primary: #2d2f35; /* Dark charcoal for high contrast */
+  --color-text-secondary: #5a5c62; /* Medium grey */
+  --color-text-tertiary: #8a9098; /* Muted grey */
+  --color-text-accent: #e17639; /* Orange labels */
+
+  /* UI Elements */
+  --color-control-knob: #2d2f35; /* Dark knob body */
+  --color-control-indicator: #e17639; /* Orange indicator line */
+  --color-button-off: #bcbab5; /* Inactive button state */
+  --color-button-on: #e17639; /* Active button state */
+  --color-screen-bg: #8a9098; /* LED display background */
+  --color-border: #bcbab5; /* Subtle borders */
+
+  /* Override shadows for light mode */
+  --shadow-sm: var(--shadow-light-sm);
+  --shadow-md: var(--shadow-light-md);
+  --shadow-lg: var(--shadow-light-lg);
+  --shadow-inset: var(--shadow-light-inset);
+}
+
+/* ========================================
+   DARK MODE (TR-808) - Explicit override
+   ======================================== */
+[data-theme='dark'] {
+  --color-bg-primary: #1a1d24;
+  --color-bg-secondary: #2d3139;
+  --color-bg-tertiary: #3a3f4a;
+  --color-bg-panel: #323640; /* TR-808 bottom section gray (around START STOP/TAP buttons) */
+
+  --color-accent-red-1: #ff3333;
+  --color-accent-red-2: #ff4444;
+  --color-accent-orange-1: #ff6633;
+  --color-accent-orange-2: #ff8844;
+  --color-accent-yellow-1: #ffcc33;
+  --color-accent-yellow-2: #ffdd44;
+  --color-accent-cream: #fff5e6;
+
+  --color-brand: #ff6633;
+
+  --color-text-primary: #e8e6e3;
+  --color-text-secondary: #a8a6a3;
+  --color-text-accent: #ff6633;
+
+  --color-control-knob: #4a4548;
+  --color-control-indicator: #ff6633;
+  --color-button-off: #2d3139;
+  --color-button-on: #ff3333;
+
+  /* Restore dark mode shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 2px 4px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 4px 8px rgba(0, 0, 0, 0.5);
+  --shadow-inset: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+}
